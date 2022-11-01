@@ -1,5 +1,7 @@
 :root {
   font-size: 62.5%; /*10px*/
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -13,6 +15,10 @@
   font-weight: 700;
   line-height: 125%;
   font-size: 1.4rem;
+}
+
+body {
+  background: linear-gradient(to top, #1e1e1e 50%, hsl(213, 89%, 20%));
 }
 
 span {
@@ -29,7 +35,7 @@ p {
 .wrapper {
   max-width: 44.3rem;
 
-  margin: 6.3rem auto;
+  margin: 6.3rem auto 11.2rem auto;
 }
 
 .date {
@@ -49,10 +55,11 @@ p {
 }
 
 header {
-  margin: 0;
+  height: 6.4rem;
 }
 
 header img {
+  width: 10rem;
   margin-bottom: 0.8rem;
 }
 
@@ -69,15 +76,16 @@ main section {
   border-radius: 6px;
 }
 
-.times {
-  display: block;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.jogo {
+ul li {
   display: flex;
   gap: 3.7rem;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 2.7rem;
 
   border-bottom: 1px solid #323238;
