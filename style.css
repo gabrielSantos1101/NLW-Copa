@@ -18,7 +18,7 @@
 }
 
 body {
-  background: linear-gradient(to top, #1e1e1e 50%, hsl(213, 89%, 20%));
+  background: linear-gradient(to top, #1e1e1e 40%, hsl(213, 89%, 20%));
 }
 
 span {
