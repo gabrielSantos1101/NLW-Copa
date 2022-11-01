@@ -10,7 +10,7 @@
   box-sizing: border-box;
   text-decoration: none;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 125%;
@@ -18,17 +18,24 @@
 }
 
 body {
-  background: linear-gradient(to top, #1e1e1e 40%, hsl(213, 89%, 20%));
+  /* background: linear-gradient(to top, #1e1e1e 40%, hsl(213, 89%, 20%)); */
+  background: #1e1e1e;
+  background-image: url(./files/bg.svg);
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: 55%;
+  background-repeat: no-repeat;
 }
 
-span {
+h2 span {
+  display: inline-flex;
   color: #f7dd43;
   font-size: 2.4rem;
 }
 
 p {
   font-weight: 900;
-  font-size: 36px;
+  font-size: 3.6rem;
   line-height: 125%;
 }
 
@@ -47,7 +54,8 @@ p {
   padding: 0.8rem 1.6rem;
   gap: 1.6rem;
 
-  width: 17.7rem;
+  min-width: 17.7rem;
+  width: fit-content;
   height: 4.6rem;
 
   border: 1px solid #746615;
@@ -67,8 +75,8 @@ header h1 {
   font-size: 30px;
 }
 
-main section {
-  padding: 3.2rem 2.3rem;
+.card {
+  padding: 3.2rem 3.3rem;
   margin-top: 3.2rem;
 
   background: #1d1c19;
@@ -76,17 +84,36 @@ main section {
   border-radius: 6px;
 }
 
-ul {
+.card ul li img {
+  width: 50px;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding: 0;
 }
 
-ul li {
+.card ul li {
   display: flex;
-  gap: 3.7rem;
+  gap: 2.4rem;
   text-align: center;
   justify-content: space-between;
-  padding-bottom: 2.7rem;
+}
 
-  border-bottom: 1px solid #323238;
+.card ul li + li {
+  border-top: 1px solid #323238;
+}
+
+/* =========================== Reset =========================== */
+@media (min-width: 1024px) {
+  .wrapper {
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  .card {
+    width: 31.6rem;
+  }
 }
