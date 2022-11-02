@@ -66,14 +66,12 @@ function creatCard() {
 }
 
 document.querySelector('#app').innerHTML = `
-<div class="wrapper">
         <div id="cards">
-        ${creatCard()}
-        ${creatCard()}
-        ${creatCard()}
-        ${creatCard()}
-        ${creatCard()}
-        ${creatCard()}
+          ${creatCard()}
+          ${creatCard()}
+          ${creatCard()}
+          ${creatCard()}
+          ${creatCard()}
+          ${creatCard()}
         </div>
-      </div>
 `
