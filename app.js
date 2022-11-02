@@ -1,44 +1,61 @@
 const matches = [
   {
-    date: '24/11',
-    day: 'quinta',
+    date: '20/11',
+    day: 'Domingo',
     matches: {
-      1: {
-        team1: 'switzerland',
-        hour: '07:00',
-        team2: 'cameroon'
-      },
-      2: {
-        team1: 'portugal',
+      matche1: {
+        team1: 'qatar',
         hour: '13:00',
-        team2: 'ghana'
-      },
-      3: {
-        team1: 'brazil',
-        hour: '16:00',
-        team2: 'serbia'
+        team2: 'ecuador'
       }
     }
   },
 
   {
-    date: '28/11',
+    date: '21/11',
     day: 'Segunda',
     matches: {
       matche1: {
-        team1: 'switzerland',
-        hour: '07:00',
-        team2: 'cameroon'
+        team1: 'england',
+        hour: '10:00',
+        team2: 'iran'
       },
       matche2: {
-        team1: 'portugal',
+        team1: 'senegal',
         hour: '13:00',
-        team2: 'ghana'
+        team2: 'nethelands'
       },
       matche3: {
-        team1: 'brazil',
+        team1: 'united states',
         hour: '16:00',
-        team2: 'serbia'
+        team2: 'wales'
+      }
+    }
+  },
+
+  {
+    date: '22/11',
+    day: 'Terça',
+    matches: {
+      matche1: {
+        team1: 'argentina',
+        hour: '07:00',
+        team2: 'saudi arabia'
+      },
+      matche2: {
+        team1: 'denmark',
+        hour: '10:00',
+        team2: 'tunisia'
+      },
+      matche3: {
+        team1: 'mexico',
+        hour: '13:00',
+        team2: 'poland'
+      },
+      matche4: {
+        team1: 'france',
+        hour: '16:00',
+        team2: 'autralia'
       }
     }
   }
