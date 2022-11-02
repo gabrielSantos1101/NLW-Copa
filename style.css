@@ -36,7 +36,6 @@ header h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 
   margin: 0;
 }
@@ -58,18 +57,18 @@ p {
   margin: 6.3rem auto 11.2rem auto;
 }
 
-.date {
-  margin: 0 auto;
+.card h2 {
   display: flex;
+  gap: 1.6rem;
   justify-content: center;
   align-items: center;
 
-  padding: 0.8rem 1.6rem;
-  gap: 1.6rem;
-
   min-width: 17.7rem;
   width: fit-content;
-  height: 4.6rem;
+
+  margin-inline: auto;
+  margin-bottom: 5.3rem;
+  padding: 0.8rem 1.6rem;
 
   border: 1px solid #746615;
   border-radius: 6px;
@@ -88,18 +87,26 @@ header h1 {
   font-size: 30px;
 }
 
+#cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
 .card {
   padding: 3.2rem 3.3rem;
   margin-top: 3.2rem;
   margin-inline: auto;
+
   width: 31.6rem;
+  min-height: 500px;
 
   background: #1d1c19;
   border-bottom: 2px solid #f7dd43;
   border-radius: 6px;
 }
 
- ul li img {
+ul li img {
   width: 50px;
 }
 
@@ -107,7 +114,9 @@ header h1 {
   display: flex;
   flex-direction: column;
   list-style: none;
+
   padding: 0;
+  margin-bottom: 0;
 }
 
 .card ul li {
@@ -125,6 +134,7 @@ header h1 {
 @media (min-width: 1024px) {
   .wrapper {
     display: flex;
+
     gap: 3.2rem;
     justify-content: center;
   }
@@ -133,7 +143,27 @@ header h1 {
     display: block;
   }
 
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    flex-direction: row;
+    align-items: flex-start;
+
+    max-width: fit-content;
+  }
+
   .card {
     width: 31.6rem;
+    min-height: 500px;
+
+    margin-top: 0;
   }
 }
