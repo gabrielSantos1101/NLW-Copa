@@ -1,3 +1,82 @@
+// const matches = [
+//   {
+//     date: '24/11',
+//     day: 'quinta',
+//     matches: {
+//       1: {
+//         team1: 'switzerland',
+//         hour: '07:00',
+//         team2: 'cameroon'
+//       },
+//       2: {
+//         team1: 'portugal',
+//         hour: '13:00',
+//         team2: 'ghana'
+//       },
+//       3: {
+//         team1: 'brazil',
+//         hour: '16:00',
+//         team2: 'serbia'
+//       }
+//     }
+//   }
+// ]
+
+// let chamar = creatCard()
+
+// function creatCard() {
+//   return `
+// <div class="card">
+//             <div class="date">
+//               <h2><span>${date}</span> ${day}</h2>
+//             </div>
+//             <ul>
+//               <li>
+//                 <img
+//                   src="./files/Flags/icon-${team1}.svg"
+//                   alt="Bandeira do ${team1}"
+//                 />
+//                 <p>08:00</p>
+//                 <img
+//                   src="./files/Flags/icon-${team2}.svg"
+//                   alt="Bandeira de ${team2}"
+//                 />
+//               </li>
+//               <li>
+//                 <img
+//                   src="./files/Flags/icon-${team1}.svg"
+//                   alt="Bandeira do ${team1}"
+//                 />
+//                 <p>13:00</p>
+//                 <img
+//                   src="./files/Flags/icon-${team2}.svg"
+//                   alt="Bandeira da ${team2}"
+//                 />
+//               </li>
+//               <li>
+//                 <img
+//                   src="./files/Flags/icon-${team1}.svg"
+//                   alt="Bandeira da ${team1}"
+//                 />
+//                 <p>20:00</p>
+//                 <img
+//                   src="./files/Flags/icon-${team2}.svg"
+//                   alt="Bandeira do ${team2}"
+//                 />
+//               </li>
+//             </ul>
+//           </div>
+// `
+// }
+
+// document.querySelector('#app').innerHTML = `
+//       <div class="wrapper">
+//         <div id="cards">
+//           ${creatCard()}
+//         </div>
+//       </div>
+// `
+
 const matches = {
   date: '24/11',
   day: 'quinta',
@@ -66,14 +145,12 @@ function creatCard() {
 }
 
 document.querySelector('#app').innerHTML = `
-<div class="wrapper">
         <div id="cards">
-        ${creatCard()}
-        ${creatCard()}
-        ${creatCard()}
-        ${creatCard()}
-        ${creatCard()}
-        ${creatCard()}
+          ${creatCard()}
+          ${creatCard()}
+          ${creatCard()}
+          ${creatCard()}
+          ${creatCard()}
+          ${creatCard()}
         </div>
-      </div>
 `
