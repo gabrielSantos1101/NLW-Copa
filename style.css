@@ -91,6 +91,7 @@ header h1 {
 .card {
   padding: 3.2rem 3.3rem;
   margin-top: 3.2rem;
+  width: 31.6rem;
 
   background: #1d1c19;
   border-bottom: 2px solid #f7dd43;
