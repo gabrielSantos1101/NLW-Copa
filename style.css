@@ -108,6 +108,7 @@ header h1 {
 
 ul li img {
   width: 50px;
+  height: 50px;
 }
 
 .card ul {
@@ -124,6 +125,7 @@ ul li img {
   gap: 2.4rem;
   text-align: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card ul li + li {
