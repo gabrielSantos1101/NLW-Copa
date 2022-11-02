@@ -40,6 +40,10 @@ header h1 {
   margin: 0;
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
 h2 span {
   color: #f7dd43;
   font-size: 2.4rem;
@@ -125,9 +129,12 @@ ul li img {
 .card ul li {
   display: flex;
   gap: 2.4rem;
+
   text-align: center;
   justify-content: space-between;
   align-items: center;
+
+  height: 10rem;
 }
 
 .card ul li + li {
