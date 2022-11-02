@@ -76,6 +76,7 @@ p {
 
 header {
   height: 6.4rem;
+  margin-bottom: 6.3rem;
 }
 
 header img {
@@ -91,6 +92,8 @@ header h1 {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+
+  margin-inline: auto;
 }
 
 .card {
