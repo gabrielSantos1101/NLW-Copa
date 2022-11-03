@@ -23,8 +23,7 @@ body {
   background-image: url(./files/bg.svg);
   background-size: 100%;
   background-position-x: center;
-  background-position-y: 55%;
-  background-repeat: no-repeat;
+  background-position-y: 50%;
 }
 
 header h1 {
@@ -87,7 +86,7 @@ header img {
 }
 
 header h1 {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 #cards {
@@ -148,6 +147,11 @@ ul li img {
 
     gap: 3.2rem;
     justify-content: center;
+  }
+
+  body {
+    background-repeat: no-repeat;
+    background-position-y: 55%;
   }
 
   header .wrapper {
