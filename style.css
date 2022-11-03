@@ -104,11 +104,15 @@ header h1 {
   margin-inline: auto;
 
   width: 31.6rem;
-  min-height: 500px;
+  min-height: 300px;
 
   background: #1d1c19;
   border-bottom: 2px solid #f7dd43;
   border-radius: 6px;
+}
+
+.card + .card {
+  margin-top: 0;
 }
 
 ul li img {
@@ -138,6 +142,39 @@ ul li img {
 
 .card ul li + li {
   border-top: 1px solid #323238;
+}
+/* ========================= animações ========================= */
+
+.card ul li p:hover,
+.card li img:hover {
+  transform: scale(1.1);
+}
+
+.card ul li p,
+.card li img {
+  transition: transform 0.3s;
+}
+
+.card h2 {
+  opacity: 0.9;
+}
+
+.card h2:hover {
+  opacity: 1;
+}
+
+.card {
+  animation: initialization 0.7s;
+}
+
+@keyframes initialization {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* =========================== Reset =========================== */
@@ -177,7 +214,7 @@ ul li img {
 
   .card {
     width: 31.6rem;
-    min-height: 500px;
+    min-height: 57.8rem;
 
     margin-top: 0;
   }

@@ -63,9 +63,11 @@ const matches = [
   }
 ]
 
+let delay = -0.4
 function creatCard(date, day, matches) {
+  delay = delay + 0.4
   return `
-<div class="card">
+<div class="card" style="animation-delay: ${delay}s;">
             <div class="date">
               <h2><span>${date}</span> ${day}</h2>
             </div>
@@ -80,8 +82,9 @@ function createGame(team1, hour, team2) {
   return `
     <li>
       <img src="./files/Flags/icon-${team1}.svg" alt="Bandeira do ${team1}">
-      <strong>${hour}</strong>
+      <p>${hour}</p>
       <img src="./files/Flags/icon-${team2}.svg" alt="Bandeira do ${team2}">
+      
     </li>
 `
 }
@@ -91,6 +94,8 @@ document.querySelector('#cards').innerHTML =
     '24/11',
     'Domingo',
     createGame('azerbaijan', '09:00', 'zimbabwe') +
+      createGame('azerbaijan', '09:00', 'zimbabwe') +
+      createGame('azerbaijan', '09:00', 'zimbabwe') +
       createGame('azerbaijan', '09:00', 'zimbabwe')
   ) +
   creatCard('25/11', 'Segunda', createGame('brazil', '10:30', 'angola')) +
