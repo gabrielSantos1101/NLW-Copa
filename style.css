@@ -40,6 +40,10 @@ header h1 {
   margin: 0;
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
 h2 span {
   color: #f7dd43;
   font-size: 2.4rem;
@@ -76,12 +80,10 @@ p {
 
 header {
   height: 6.4rem;
-  margin-bottom: 6.3rem;
 }
 
 header img {
-  width: 10rem;
-  margin-bottom: 0.8rem;
+  width: 13rem;
 }
 
 header h1 {
@@ -93,6 +95,7 @@ header h1 {
   flex-direction: column;
   gap: 3.2rem;
 
+  margin: 15rem 16.3rem;
   margin-inline: auto;
 }
 
@@ -126,9 +129,12 @@ ul li img {
 .card ul li {
   display: flex;
   gap: 2.4rem;
+
   text-align: center;
   justify-content: space-between;
   align-items: center;
+
+  height: 10rem;
 }
 
 .card ul li + li {
