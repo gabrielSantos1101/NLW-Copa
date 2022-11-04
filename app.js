@@ -90,27 +90,22 @@ function createGame(team1, hour, team2) {
 }
 
 document.querySelector('#cards').innerHTML =
+  creatCard('20/11', 'Domingo', createGame('qatar', '13:00', 'ecuador')) +
   creatCard(
-    '20/11',
-    'Domingo',
-    createGame('qatar', '13:00', 'ecuador')
-  ) +
-  creatCard('21/11', 'Segunda', createGame('england', '10:00', 'iran')+
-  createGame('senegal', '13:00', 'nethelands')+
-  createGame('united states', '16:00', 'wales')) +
-  creatCard('22/11', 'Terça', createGame('argentina', '07:00', 'saudi arabia')+ createGame('enmark', '10:00', 'tunisia')+ createGame('mexico', '13:00', 'poland')+ createGame('france', '16:00', 'autralia')) +
-  creatCard(
-    '27/11',
-    'Quarta',
-    createGame('uzbekistán', '05:00', 'united states')
+    '21/11',
+    'Segunda',
+    createGame('england', '10:00', 'iran') +
+      createGame('senegal', '13:00', 'netherlands') +
+      createGame('united states', '16:00', 'wales')
   ) +
   creatCard(
-    '28/11',
-    'Quinta',
-    createGame('virgin islands', '12:30', 'vatican city')
-  ) +
-  creatCard('29/11', 'Sexta', createGame('tibet', '11:15', 'togo'))
-
+    '22/11',
+    'Terça',
+    createGame('argentina', '07:00', 'saudi arabia') +
+      createGame('denmark', '10:00', 'tunisia') +
+      createGame('mexico', '13:00', 'poland') +
+      createGame('france', '16:00', 'australia')
+  )
 // ================ background ================
 
 document.querySelector('.switch').addEventListener('click', e => {
