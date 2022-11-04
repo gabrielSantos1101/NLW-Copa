@@ -111,3 +111,46 @@ document.querySelector('#cards').innerHTML =
     createGame('virgin islands', '12:30', 'vatican city')
   ) +
   creatCard('29/11', 'Sexta', createGame('tibet', '11:15', 'togo'))
+
+window.onload = function () {
+  Particles.init({
+    selector: '.background',
+    sizeVariations: '4',
+    color: ['#48F2E3', '#2c3e50', '#95a5a6', '#7f8c8d'],
+    connectParticles: true,
+    minDistance: 120,
+    speed: 1
+  })
+}
+
+Particles.init({
+  // normal options
+  selector: '.background',
+  maxParticles: 450,
+  // options for breakpoints
+  responsive: [
+    {
+      breakpoint: 768,
+      options: {
+        maxParticles: 200,
+        color: '#48F2E3',
+        connectParticles: false
+      }
+    },
+    {
+      breakpoint: 425,
+      options: {
+        maxParticles: 100,
+        connectParticles: true
+      }
+    },
+    {
+      breakpoint: 320,
+      options: {
+        maxParticles: 0
+
+        // disables particles.js
+      }
+    }
+  ]
+})

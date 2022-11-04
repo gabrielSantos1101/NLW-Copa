@@ -7,7 +7,7 @@
   --card-border-color: #338af3;
   --card-h2-border-color: #338af3;
   --card-bg-color: #202024;
-  --bg: url(./files/bg-blue.svg);
+  /* --bg: url(./files/bg-blue.svg); */
 }
 
 body.green {
@@ -22,6 +22,22 @@ body.yellow {
   --card-h2-border-color: #f7dd43;
   --card-bg-color: #1d1c19;
   --card-border-color: #f7dd43;
+}
+
+.background {
+  position: fixed;
+
+  display: block;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: -1;
+
+  height: 100%;
+
+  background: #34495e;
 }
 
 svg #qatar:hover {
