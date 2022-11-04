@@ -112,6 +112,15 @@ document.querySelector('#cards').innerHTML =
   ) +
   creatCard('29/11', 'Sexta', createGame('tibet', '11:15', 'togo'))
 
+// ================ background ================
+
+document.querySelector('.switch').addEventListener('click', e => {
+  e.target.classList.toggle('ball-move')
+  document.body.classList.toggle('green')
+})
+
+// ================ particles ================
+
 window.onload = function () {
   Particles.init({
     selector: '.background',
