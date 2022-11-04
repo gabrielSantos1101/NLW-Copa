@@ -91,15 +91,14 @@ function createGame(team1, hour, team2) {
 
 document.querySelector('#cards').innerHTML =
   creatCard(
-    '24/11',
+    '20/11',
     'Domingo',
-    createGame('azerbaijan', '09:00', 'zimbabwe') +
-      createGame('azerbaijan', '09:00', 'zimbabwe') +
-      createGame('azerbaijan', '09:00', 'zimbabwe') +
-      createGame('azerbaijan', '09:00', 'zimbabwe')
+    createGame('qatar', '13:00', 'ecuador')
   ) +
-  creatCard('25/11', 'Segunda', createGame('brazil', '10:30', 'angola')) +
-  creatCard('26/11', 'Terça', createGame('wales', '08:30', 'vanuatu')) +
+  creatCard('21/11', 'Segunda', createGame('england', '10:00', 'iran')+
+  createGame('senegal', '13:00', 'nethelands')+
+  createGame('united states', '16:00', 'wales')) +
+  creatCard('22/11', 'Terça', createGame('argentina', '07:00', 'saudi arabia')+ createGame('enmark', '10:00', 'tunisia')+ createGame('mexico', '13:00', 'poland')+ createGame('france', '16:00', 'autralia')) +
   creatCard(
     '27/11',
     'Quarta',
