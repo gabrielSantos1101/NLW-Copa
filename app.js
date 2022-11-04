@@ -127,7 +127,7 @@ window.onload = function () {
     sizeVariations: '4',
     color: ['#48F2E3', '#2c3e50', '#95a5a6', '#7f8c8d'],
     connectParticles: true,
-    minDistance: 120,
+    minDistance: 150,
     speed: 1
   })
 }
@@ -142,8 +142,7 @@ Particles.init({
       breakpoint: 768,
       options: {
         maxParticles: 200,
-        color: '#48F2E3',
-        connectParticles: false
+        connectParticles: true
       }
     },
     {
