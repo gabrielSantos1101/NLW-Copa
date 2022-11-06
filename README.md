@@ -18,7 +18,9 @@ Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologia
 <br>
 
 <p align="center">
+  <a href="Gabriel-Santos01.github.io/NLW-Copa/" target = "blank">
   <img alt="calendario da copa" src=".github/preview.jpg" width="100%">
+  </a>
 </p>
 
 ## 🚀 Tecnologias
