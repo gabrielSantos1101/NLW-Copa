@@ -22,7 +22,7 @@
   background-color: transparent;
 }
 
-#bg-switch svg path[fill*='#ffffff'] {
+.switch path [fill*='#ffffff'] {
   fill: #000000;
 }
 
