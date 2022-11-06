@@ -122,7 +122,7 @@ window.onload = function () {
     color: ['#48F2E3', '#2c3e50', '#95a5a6', '#7f8c8d'],
     connectParticles: true,
     minDistance: 150,
-    speed: 1
+    speed: 0.7
   })
 }
 
