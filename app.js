@@ -129,11 +129,11 @@ window.onload = function () {
 Particles.init({
   // normal options
   selector: '.background',
-  maxParticles: 450,
+  maxParticles: 300,
   // options for breakpoints
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 937,
       options: {
         maxParticles: 200,
         connectParticles: true
@@ -149,7 +149,7 @@ Particles.init({
     {
       breakpoint: 320,
       options: {
-        maxParticles: 10,
+        maxParticles: 50,
         connectParticles: true
 
         // disables particles.js
