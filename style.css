@@ -22,10 +22,6 @@
   background-color: transparent;
 }
 
-.switch path [fill*='#ffffff'] {
-  fill: #000000;
-}
-
 body.green {
   --bg: rgba(26, 139, 81, 0.453);
   --card-h2-border-color: #047c3f;
@@ -51,7 +47,8 @@ body.yellow {
 
   z-index: -1;
 
-  height: 100%;
+  height: 100vh;
+  width: 100vh;
 
   background: var(--bg);
 }
@@ -123,7 +120,7 @@ p {
 .wrapper {
   max-width: 44.3rem;
 
-  margin: 6.3rem auto 11.2rem auto;
+  margin: 6.3rem auto 8rem auto;
 }
 
 .card h2 {
@@ -160,7 +157,7 @@ header h1 {
   flex-direction: column;
   gap: 3.2rem;
 
-  margin: 15rem 16.3rem;
+  margin-top: 15rem;
   margin-inline: auto;
 }
 
@@ -213,6 +210,30 @@ ul li img {
 .card ul li + li {
   border-top: 1px solid #323238;
 }
+
+/* ========================= Footer ========================= */
+footer .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+  margin-inline: 5px;
+}
+
+footer a {
+  margin-left: 5px;
+}
+
+footer p {
+  font-size: 1.4rem;
+}
+
 /* ========================= animações ========================= */
 
 .card ul li p:hover,
