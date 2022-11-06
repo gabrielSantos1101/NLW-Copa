@@ -149,7 +149,8 @@ Particles.init({
     {
       breakpoint: 320,
       options: {
-        maxParticles: 30
+        maxParticles: 10,
+        connectParticles: true
 
         // disables particles.js
       }
