@@ -109,7 +109,7 @@ document.querySelector('#cards').innerHTML =
 // ================ background ================
 
 document.querySelector('.switch').addEventListener('click', e => {
-  e.target.classList.toggle('ball-move')
+  e.target.classList.toggle('click')
   document.body.classList.toggle('green')
 })
 

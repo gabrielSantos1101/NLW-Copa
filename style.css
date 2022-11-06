@@ -22,6 +22,10 @@
   background-color: transparent;
 }
 
+#bg-switch svg path[fill*='#ffffff'] {
+  fill: #000000;
+}
+
 body.green {
   --bg: rgba(26, 139, 81, 0.453);
   --card-h2-border-color: #047c3f;
@@ -171,6 +175,10 @@ header h1 {
   background: hsl(45, 7%, 11%, 0.85);
   border-bottom: 2px solid var(--card-border-color);
   border-radius: 6px;
+}
+
+.card:hover {
+  box-shadow: var(--card-border-color) 3px 10px 10px -4px;
 }
 
 .card + .card {
