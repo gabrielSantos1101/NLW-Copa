@@ -292,16 +292,33 @@ footer p {
     opacity: 0;
   }
 
+  #button {
+    opacity: 0;
+  }
+
+  .wrapper {
+    display: flex;
+
+    justify-content: center;
+  }
+
   body {
     background: var(--bg-blue-mobile);
+    background-repeat: no-repeat;
+    background-position-y: 55%;
   }
 
-  body.green {
-    background: var(--bg-green-mobile);
+  header .wrapper {
+    display: block;
   }
 
-  body.green footer a {
-    color: #338af3;
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+
+    margin-inline: auto;
   }
 
   footer a {
