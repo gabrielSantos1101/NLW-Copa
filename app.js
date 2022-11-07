@@ -126,7 +126,7 @@ document.querySelector('#cards').innerHTML =
     '25/11',
     'Sexta',
     createGame('wales', '07:00', 'iran') +
-      createGame('england', '16:00', 'usa') +
+      createGame('england', '16:00', 'united states') +
       createGame('qatar', '10:00', 'senegal') +
       createGame('netherlands', '13:00', 'ecuador')
   ) +
@@ -159,15 +159,15 @@ document.querySelector('#cards').innerHTML =
     'Segunda',
     createGame('cameroon', '07:00', 'serbia') +
       createGame('brazil', '13:00', 'switzerland') +
-      createGame('south korea', '10:00', 'ghana', 'H') +
-      createGame('portugal', '16:00', 'uruguay', 'H')
+      createGame('south korea', '10:00', 'ghana') +
+      createGame('portugal', '16:00', 'uruguay')
   ) +
   creatCard(
     '29/11',
     'Terça',
     createGame('ecuador', '12:00', 'senegal') +
       createGame('netherlands', '12:00', 'qatar') +
-      createGame('iran', '16:00', 'usa') +
+      createGame('iran', '16:00', 'united states') +
       createGame('wales', '16:00', 'england')
   ) +
   creatCard(
@@ -213,15 +213,14 @@ window.onload = function () {
     speed: 0.7
   })
 }
-
 Particles.init({
   // normal options
   selector: '.background',
-  maxParticles: 300,
+  maxParticles: 450,
   // options for breakpoints
   responsive: [
     {
-      breakpoint: 937,
+      breakpoint: 768,
       options: {
         maxParticles: 200,
         connectParticles: true
@@ -237,8 +236,7 @@ Particles.init({
     {
       breakpoint: 320,
       options: {
-        maxParticles: 50,
-        connectParticles: true
+        maxParticles: 30
 
         // disables particles.js
       }

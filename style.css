@@ -47,8 +47,8 @@ body.yellow {
 
   z-index: -1;
 
-  height: 100vh;
-  width: 100vh;
+  height: 100%;
+  width: 100%;
 
   background: var(--bg);
 }
@@ -274,6 +274,12 @@ footer p {
   }
 }
 
+/* =========================== Mobile Reset =========================== */
+@media (max-width: 425px) {
+  .background {
+    opacity: 0;
+  }
+}
 /* =========================== Reset =========================== */
 @media (min-width: 1024px) {
   .wrapper {
