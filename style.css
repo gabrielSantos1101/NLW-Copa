@@ -14,7 +14,11 @@
     hsl(213, 89%, 20%) 50%,
     #24004e
   );
-  --bg-green-mobile: linear-gradient(to bottom, #228b22, #1c4518 50%);
+  --bg-green-mobile: linear-gradient(
+    117deg,
+    rgba(123, 216, 96, 1) 39.2%,
+    rgba(255, 255, 255, 1) 156.2%
+  );
 }
 
 #button {
@@ -292,10 +296,6 @@ footer p {
     opacity: 0;
   }
 
-  #button {
-    opacity: 0;
-  }
-
   .wrapper {
     display: flex;
 
@@ -306,6 +306,10 @@ footer p {
     background: var(--bg-blue-mobile);
     background-repeat: no-repeat;
     background-position-y: 55%;
+  }
+
+  body.green {
+    background-image: var(--bg-green-mobile);
   }
 
   header .wrapper {
@@ -321,8 +325,16 @@ footer p {
     margin-inline: auto;
   }
 
-  footer a {
-    color: #047c3f;
+  .green footer a {
+    color: #7700ff;
+  }
+
+  .green footer p {
+    color: #1d6fa3;
+  }
+
+  footer p {
+    color: #fd6585;
   }
 }
 /* =========================== Reset =========================== */
