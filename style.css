@@ -8,6 +8,13 @@
   --card-h2-border-color: #338af3;
   --card-bg-color: #202024;
   --bg: #287fe96b;
+  --bg-blue-mobile: linear-gradient(
+    to bottom,
+    #006187,
+    hsl(213, 89%, 20%) 50%,
+    #24004e
+  );
+  --bg-green-mobile: linear-gradient(to bottom, #228b22, #1c4518 50%);
 }
 
 #button {
@@ -217,6 +224,10 @@ footer .wrapper {
   margin-bottom: 0;
 }
 
+footer {
+  text-transform: uppercase;
+}
+
 footer div {
   display: flex;
   align-items: center;
@@ -234,6 +245,7 @@ footer img {
 
 footer a {
   margin-left: 5px;
+  color: #b0ff14;
 }
 
 footer p {
@@ -275,9 +287,25 @@ footer p {
 }
 
 /* =========================== Mobile Reset =========================== */
-@media (max-width: 425px) {
+@media (max-width: 580px) {
   .background {
     opacity: 0;
+  }
+
+  body {
+    background: var(--bg-blue-mobile);
+  }
+
+  body.green {
+    background: var(--bg-green-mobile);
+  }
+
+  body.green footer a {
+    color: #338af3;
+  }
+
+  footer a {
+    color: #047c3f;
   }
 }
 /* =========================== Reset =========================== */
