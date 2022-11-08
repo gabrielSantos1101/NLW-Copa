@@ -30,6 +30,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML e CSS
 - JavaScript
 - Git e Github
+
+
+## 📚 Bibliotecas
+
 - <a href="https://github.com/marcbruederlin/particles.js" target = "blank">Particles.js</a>
 
 ## 💻 Projeto
