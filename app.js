@@ -70,17 +70,17 @@ const matches = [
         hour: '07:00',
         team2: 'croatia'
       },
-      matche2: {
+      matche4: {
         team1: 'belgium',
         hour: '16:00',
         team2: 'canada'
       },
-      matche3: {
+      matche2: {
         team1: 'germany',
         hour: '10:00',
         team2: 'japan'
       },
-      matche4: {
+      matche3: {
         team1: 'spain',
         hour: '13:00',
         team2: 'costa rica'
