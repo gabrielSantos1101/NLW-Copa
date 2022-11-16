@@ -25,7 +25,7 @@ const matches = [
       matche2: {
         team1: 'senegal',
         hour: '13:00',
-        team2: 'nethelands'
+        team2: 'netherlands'
       },
       matche3: {
         team1: 'united states',
@@ -57,7 +57,33 @@ const matches = [
       matche4: {
         team1: 'france',
         hour: '16:00',
-        team2: 'autralia'
+        team2: 'australia'
+      }
+    }
+  },
+  {
+    date: '23/11',
+    day: 'Quarta',
+    matches: {
+      matche1: {
+        team1: 'morocco',
+        hour: '07:00',
+        team2: 'croatia'
+      },
+      matche2: {
+        team1: 'belgium',
+        hour: '16:00',
+        team2: 'canada'
+      },
+      matche3: {
+        team1: 'germany',
+        hour: '10:00',
+        team2: 'japan'
+      },
+      matche4: {
+        team1: 'spain',
+        hour: '13:00',
+        team2: 'costa rica'
       }
     }
   }
@@ -90,29 +116,81 @@ function createGame(team1, hour, team2) {
 }
 
 document.querySelector('#cards').innerHTML =
-  creatCard('20/11', 'Domingo', createGame('qatar', '13:00', 'ecuador')) +
+  creatCard(
+    matches[0].date,
+    matches[0].day,
+    createGame(
+      matches[0].matches.matche1.team1,
+      matches[0].matches.matche1.hour,
+      matches[0].matches.matche1.team2
+    )
+  ) +
   creatCard(
     '21/11',
     'Segunda',
-    createGame('england', '10:00', 'iran') +
-      createGame('senegal', '13:00', 'netherlands') +
-      createGame('united states', '16:00', 'wales')
+    createGame(
+      matches[1].matches.matche1.team1,
+      matches[1].matches.matche1.hour,
+      matches[1].matches.matche1.team2
+    ) +
+      createGame(
+        matches[1].matches.matche2.team1,
+        matches[1].matches.matche2.hour,
+        matches[1].matches.matche2.team2
+      ) +
+      createGame(
+        matches[1].matches.matche3.team1,
+        matches[1].matches.matche3.hour,
+        matches[1].matches.matche3.team2
+      )
   ) +
   creatCard(
     '22/11',
     'Terça',
-    createGame('argentina', '07:00', 'saudi arabia') +
-      createGame('denmark', '10:00', 'tunisia') +
-      createGame('mexico', '13:00', 'poland') +
-      createGame('france', '16:00', 'australia')
+    createGame(
+      matches[2].matches.matche1.team1,
+      matches[2].matches.matche1.hour,
+      matches[2].matches.matche1.team2
+    ) +
+      createGame(
+        matches[2].matches.matche2.team1,
+        matches[2].matches.matche2.hour,
+        matches[2].matches.matche2.team2
+      ) +
+      createGame(
+        matches[2].matches.matche3.team1,
+        matches[2].matches.matche3.hour,
+        matches[2].matches.matche3.team2
+      ) +
+      createGame(
+        matches[2].matches.matche4.team1,
+        matches[2].matches.matche4.hour,
+        matches[2].matches.matche4.team2
+      )
   ) +
   creatCard(
     '23/11',
     'Quarta',
-    createGame('morocco', '07:00', 'croatia') +
-      createGame('belgium', '16:00', 'canada') +
-      createGame('germany', '10:00', 'japan') +
-      createGame('spain', '13:00', 'costa rica')
+    createGame(
+      matches[3].matches.matche1.team1,
+      matches[3].matches.matche1.hour,
+      matches[3].matches.matche1.team2
+    ) +
+      createGame(
+        matches[3].matches.matche2.team1,
+        matches[3].matches.matche2.hour,
+        matches[3].matches.matche2.team2
+      ) +
+      createGame(
+        matches[3].matches.matche3.team1,
+        matches[3].matches.matche3.hour,
+        matches[3].matches.matche3.team2
+      ) +
+      createGame(
+        matches[3].matches.matche4.team1,
+        matches[3].matches.matche4.hour,
+        matches[3].matches.matche4.team2
+      )
   ) +
   creatCard(
     '24/11',
