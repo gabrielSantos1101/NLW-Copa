@@ -275,7 +275,6 @@ document.querySelector('#cards').innerHTML =
 // ================ background ================
 
 document.querySelector('.switch').addEventListener('click', e => {
-  e.target.classList.toggle('dark')
   document.body.classList.toggle('green')
 })
 
